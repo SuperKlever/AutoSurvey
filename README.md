@@ -1,6 +1,6 @@
 # AutoSurvey
 
-Allows you to survey the map automatically.
+Allows you to survey the map around you automatically.
 
 You can change:
 
