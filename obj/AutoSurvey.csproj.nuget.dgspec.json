@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\selik\\Desktop\\AutoSurvey\\AutoSurvey.csproj": {}
+    "D:\\code\\AutoSurvey\\AutoSurvey.csproj": {}
   },
   "projects": {
-    "C:\\Users\\selik\\Desktop\\AutoSurvey\\AutoSurvey.csproj": {
+    "D:\\code\\AutoSurvey\\AutoSurvey.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\selik\\Desktop\\AutoSurvey\\AutoSurvey.csproj",
+        "projectUniqueName": "D:\\code\\AutoSurvey\\AutoSurvey.csproj",
         "projectName": "AutoSurvey",
-        "projectPath": "C:\\Users\\selik\\Desktop\\AutoSurvey\\AutoSurvey.csproj",
+        "projectPath": "D:\\code\\AutoSurvey\\AutoSurvey.csproj",
         "packagesPath": "C:\\Users\\selik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\selik\\Desktop\\AutoSurvey\\obj\\",
+        "outputPath": "D:\\code\\AutoSurvey\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\selik\\AppData\\Roaming\\NuGet\\NuGet.Config",

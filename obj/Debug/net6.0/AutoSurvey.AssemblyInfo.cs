@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoSurvey")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc7aa95aba9c0881453609fa2cea438ba7831aa3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoSurvey")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoSurvey")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
