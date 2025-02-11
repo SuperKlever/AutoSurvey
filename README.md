@@ -9,6 +9,7 @@ You can change:
 
 ## Installation
 
-You'll need [ModSettings](https://github.com/zeobviouslyfakeacc/ModSettings/releases). Place `AutoSurvey.dll` your `../Mods/` folder.
+You'll need [ModSettings](https://github.com/zeobviouslyfakeacc/ModSettings/releases). Place `AutoSurvey.dll` into your `../Mods/` folder.
+<br>
 
 ![Logo2](Images/Logo2.png)
