@@ -6,6 +6,7 @@ You can change:
 
 - Reveal map delay 
 - Reveal map range multiplier
+- Lock auto survey while bad weather
 
 ## Installation
 

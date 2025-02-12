@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\AutoSurvey\\AutoSurvey.csproj",
+      "projectUniqueName": "D:\\code\\TLD\\AutoSurvey\\AutoSurvey.csproj",
       "projectName": "AutoSurvey",
-      "projectPath": "D:\\code\\AutoSurvey\\AutoSurvey.csproj",
+      "projectPath": "D:\\code\\TLD\\AutoSurvey\\AutoSurvey.csproj",
       "packagesPath": "C:\\Users\\selik\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\AutoSurvey\\obj\\",
+      "outputPath": "D:\\code\\TLD\\AutoSurvey\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\selik\\AppData\\Roaming\\NuGet\\NuGet.Config",

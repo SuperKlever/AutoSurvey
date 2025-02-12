@@ -2,7 +2,7 @@
 using MelonLoader;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(AutoSurvey.Main), "Auto Map Survey", "1.0.0", "SuperKlever", null)]
+[assembly: MelonInfo(typeof(AutoSurvey.Main), "Auto Map Survey", "1.1.0", "SuperKlever", null)]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
 
 namespace AutoSurvey
@@ -14,20 +14,28 @@ namespace AutoSurvey
 		public override void OnInitializeMelon()
         {
 			Settings.OnLoad();
+			//MelonLogger.Msg("Auto Map Survey is alive");
 		}
 
 		public override void OnUpdate()
 		{
-			if (!GameManager.IsMainMenuActive() &&
+			bool inGameFlag = !GameManager.IsMainMenuActive() &&
 				Settings.Instance.autodrawEnabled &&
-				!InterfaceManager.IsPanelEnabled<Panel_Map>())
+				!InterfaceManager.IsPanelEnabled<Panel_Map>() &&
+				InterfaceManager.IsPanelLoaded<Panel_Map>();
+			if (inGameFlag)
 			{
-				Main.lastDrawTime += Time.deltaTime;
-				if (Main.lastDrawTime >= Settings.Instance.autodrawDelay)
+				bool canSurveyFlag = Settings.Instance.UnlockSurvey || CharcoalItem.HasSurveyVisibility(0);
+				if (canSurveyFlag)
 				{
-					InterfaceManager.GetPanel<Panel_Map>().DoDetailSurvey();
-					InterfaceManager.GetPanel<Panel_Map>().CloseSelf();
-					Main.lastDrawTime = 0f;
+					Main.lastDrawTime += Time.deltaTime;
+					if (Main.lastDrawTime >= Settings.Instance.autodrawDelay)
+					{
+						//MelonLogger.Msg($"Try reveal");
+						float radius = Settings.Instance.drawingRange * 150;
+						InterfaceManager.GetPanel<Panel_Map>().DoNearbyDetailsCheck(radius, true, false, GameManager.GetPlayerTransform().position, true);
+						Main.lastDrawTime = 0f;
+					}
 				}
 			}
 		}
